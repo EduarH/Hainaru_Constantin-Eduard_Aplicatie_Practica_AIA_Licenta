@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.buddy.buddy">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppUberClone">
+        <activity
+            android:name="com.buddy.buddy.activity.ProfileDriverActivity"
+            android:exported="false"
+            android:parentActivityName="com.buddy.buddy.activity.MapDriverActivity"/>
+
+        <receiver
+            android:name="com.buddy.buddy.receivers.AcceptReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name="com.buddy.buddy.receivers.CancelReceiver"
+            android:enabled="true" />
+
+        <service
+            android:name="com.buddy.buddy.services.FirebaseMessagingClient"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.buddy.buddy.activity.ProfileClientActivity"
+            android:exported="false"
+            android:parentActivityName="com.buddy.buddy.activity.MapClientActivity" />
+        <activity
+            android:name="com.buddy.buddy.activity.MapDriverBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.buddy.buddy.activity.MapClientBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.buddy.buddy.activity.SearchDriverActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.buddy.buddy.activity.RouteActivity"
+            android:exported="false"
+            android:parentActivityName="com.buddy.buddy.activity.MapClientActivity" />
+        <activity
+            android:name="com.buddy.buddy.activity.MapDriverActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.buddy.buddy.activity.MapClientActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.buddy.buddy.activity.RegisterDriverActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.buddy.buddy.activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.buddy.buddy.activity.RegisterClientActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.buddy.buddy.activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+
+</manifest>

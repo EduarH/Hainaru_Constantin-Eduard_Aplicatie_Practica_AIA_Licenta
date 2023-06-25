@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Buddy</string>
+    <!-- TextView -->
+    <string name="title_buddy">Buddy</string>
+    <string name="description_app">We are building new ways to support you</string>
+    <string name="title_register">Register</string>
+    <string name="text_forget_password">Forgot your password?</string>
+    <string name="text_not_account">Don\'t have an account?</string>
+    <string name="text_go_register">\Sign Up</string>
+    <string name="text_information_vehicle">Service Details</string>
+    <string name="text_information_buddy">Buddy Information</string>
+    <string name="text_client">Client</string>
+    <string name="text_buddy">Buddy</string>
+
+    <string name="text_logout">Logout</string>
+    <string name="text_route">Request route</string>
+    <string name="text_connect">Connect</string>
+    <string name="text_profile">Profile</string>
+    <string name="text_disconnect">Disconnect</string>
+
+    <!-- EditText -->
+    <string name="text_name_user">Full name</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_confirm_password">Confirm password</string>
+    <string name="text_category">Category</string>
+    <string name="text_vehicle_brand">Max People</string>
+    <string name="text_vehicle_plate">Age</string>
+    <string name="text_subtitle">Subtitle</string>
+
+
+    <!-- Text Buttons -->
+    <string name="button_client">I\'M CUSTOMER</string>
+    <string name="button_buddy">I AM A BUDDY</string>
+    <string name="button_register">CHECK IN</string>
+    <string name="button_login">Log in</string>
+    <string name="button_save">Keep</string>
+    <string name="button_origin">ORIGIN</string>
+    <string name="button_destination">DESTINATION</string>
+    <string name="button_solicitar">REQUEST</string>
+    <string name="button_cancel">CANCEL</string>
+
+
+    //Category
+    <string-array name="buddy_category">
+        <item>@string/category_guide</item>
+        <item>@string/category_gym_partner</item>
+        <item>@string/category_game_partner</item>
+    </string-array>
+
+    <string name="category_guide">Guide</string>
+    <string name="category_gym_partner">Gym Partner</string>
+    <string name="category_game_partner">Game Partner</string>
+
+</resources>
